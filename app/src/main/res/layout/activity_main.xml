@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context="com.ttp.lstchatapp.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/image_message"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/mainicon" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_below="@+id/image_message"
+        android:id="@+id/group_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <EditText
+                android:id="@+id/main_editLogin"
+                android:hint="아이디"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            
+            
+            
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/main_editPassword"
+                android:hint="비밀번호"
+                android:inputType="textPassword"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_below="@+id/group_login"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/main_btnLigin"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:text="로그인"
+            android:textStyle="bold"
+            android:textColor="@color/text_selector" />
+
+        <Button
+            android:id="@+id/main_btnSignup"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="#095d9f"
+            android:text="회원가입"
+            android:textStyle="bold"
+            android:textColor="@color/text_selector" />
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#967ac1</color>
+    <color name="colorPrimaryDark">#684991</color>
+    <color name="colorAccent">#cfc1e2</color>
+
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlue">#2196F3</color>
+    <drawable name="bg_select">#2196F3</drawable>
+    <drawable name="bg">#EEEEEE</drawable>
+
+
+    출처: http://dutax.tistory.com/2 [Dutax의 안드로이드]
+    <array name="dot_colors">
+
+        <item>#03A9F4</item>
+        <item>#E65100</item>
+        <item>#FFBB00</item>
+    </array>
+</resources>
